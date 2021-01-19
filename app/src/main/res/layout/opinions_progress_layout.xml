@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/questionName"
+        android:text="name of question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        android:layout_below="@+id/questionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/opinionProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    <ProgressBar-->
+<!--        android:layout_below="@+id/questionName"-->
+<!--        android:id="@+id/progressBar"-->
+<!--        style="@android:style/Widget.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layoutDirection="rtl"-->
+<!--        android:padding="4dp"-->
+<!--        android:progressDrawable="@drawable/progress_color_white" />-->
+
+</RelativeLayout>

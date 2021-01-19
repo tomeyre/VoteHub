@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/back">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:paddingRight="13dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/parliament_chamber" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:translationZ="1dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/main_gradient" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchCv"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:translationZ="1dp"
+        android:layout_height="70dp">
+
+        <SearchView
+            android:queryHint="Mp name, party, area"
+            android:layout_gravity="center"
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/white"></SearchView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/searchCv"
+        android:scrollbars="none"
+        android:translationZ="3dp" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/compareSelectedRv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchCv"
+        android:scrollbars="none"
+        android:translationZ="2dp" />
+
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:translationZ="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your\nVote\nMatters"
+        android:isScrollContainer="false"/>
+
+    <ImageButton
+        android:background="@color/transparent"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/appInfo"
+        android:src="@drawable/info"
+        android:translationZ="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+
+</RelativeLayout>

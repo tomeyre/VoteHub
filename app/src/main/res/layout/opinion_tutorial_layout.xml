@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/info"
+            android:textColor="@color/black"
+            android:text="The opinion bars are generated based on the results of the quiz and the votes the MP has cast.\n\n
+The bar below is split down in to total votes covered within that subject. \n\n
+For instance the bar below may well be split down into 6 separate votes on the subject, represented by 6 different questions within the quiz.\n\n
+ - The green part of the bar represents votes/questions that you and the MP agree on.\n\n
+ - The gray part of the bar represents votes/questions that either the MP or yourself have not given an opinion on and therefor we cannot see if you have agreed.\n\n
+ - The red part of the bar represents votes/questions that you and the MP disagree on.\n\n
+If you or the MP do not have an opinion on any of the votes/questions within the given subject the bar will not be displayed."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/info"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:text="Leave The EU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bar" />
+    </RelativeLayout>
+
+</RelativeLayout>

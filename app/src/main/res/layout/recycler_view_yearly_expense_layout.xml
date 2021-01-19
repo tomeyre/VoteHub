@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/payLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/parlimentGreen"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/payTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Salary"
+                android:textColor="@color/parlimentGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/payInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payTitle"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/salaryTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Permanent Staff"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/salaryCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/salaryTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£41,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/staffSalaryTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Non-Permanent\nStaff"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/staffSalaryCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/staffSalaryTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£41,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/staffSalaryPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/staffSalaryCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="41%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@+id/payLayout"
+        android:id="@+id/officeCostsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/parlimentGreen"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:id="@+id/officeCostsRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/officeCostsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Office Costs"
+                android:textColor="@color/parlimentGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/officeCostsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/officeCostsTitle"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/officeCostTotalTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Total"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/officeCostTotalCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/officeCostTotalTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£41,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/officeCostTotalPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/officeCostTotalCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="41%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/officeCostBreakdownBtn"
+                            android:layout_centerHorizontal="true"
+                            android:text="See Breakdown\nOf Office Costs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/officeCostsBreakdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/officeCostsInfo"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+            <org.eazegraph.lib.charts.PieChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/piechart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:translationZ="2dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/piechartRv"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:layout_width="0dp"
+                android:layout_height="180dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@+id/officeCostsLayout"
+        android:id="@+id/secondHomeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/parlimentGreen"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Second Home"
+                android:textColor="@color/parlimentGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/tripInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="10dp"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/rentTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Rent"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/rentCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/rentTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£41,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/rentPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/rentCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="41%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/utilitiesTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Utilities"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/utilitiesCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/utilitiesTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£750"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/utilitiesPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/utilitiesCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/councilTaxTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Council\nTax"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/councilTaxCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/councilTaxTitle"
+                                    android:layout_marginTop="0dp"
+                                    android:gravity="center"
+                                    android:text="£1,500"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/councilTaxPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/councilTaxCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/otherAccommodation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondHomeLayout"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/parlimentGreen"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hotel"
+                android:textColor="@color/parlimentGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/otherAccommodationInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aTitle"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/londonHotelsTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="London"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/londonHotelsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/londonHotelsTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£1,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/londonHotelsPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/londonHotelsCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/otherHotelsTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Outside London"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/otherHotelsCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/otherHotelsTitle"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£750"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/otherHotelsPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/otherHotelsCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherAccommodation"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:strokeColor="@color/parlimentGreen"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/travelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Travel"
+                android:textColor="@color/parlimentGreen"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/travelInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/travelTitle"
+                android:layout_margin="10dp"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/trainTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Train"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/trainCount"
+                                    android:layout_below="@+id/trainTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£1,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/trainPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/trainCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp"/>-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/taxiTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Taxi"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/taxiCount"
+                                    android:layout_below="@+id/taxiTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£750"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/taxiPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/taxiCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/airTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Air"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/airCount"
+                                    android:layout_below="@+id/airTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£1,500"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/airPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/airCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp" />-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nonMpTravelInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/travelInfo"
+                android:weightSum="3"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/ownCarTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Own Car\nMileage"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/ownCarCount"
+                                    android:layout_below="@+id/ownCarTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£1,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/ownCarPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/ownCarCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp"/>-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/partnerTravelTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Partner's Travel\nExpenses"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/partnerTravelCount"
+                                    android:layout_below="@+id/partnerTravelTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£1,000"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/partnerTravelPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/partnerTravelCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp"/>-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:cardCornerRadius="3dp"
+                            app:strokeColor="@color/parlimentGreen"
+                            app:strokeWidth="1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/staffTravelTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="Staff Travel\nExpenses"
+                                    android:textColor="@color/parlimentGreen"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/staffTravelCount"
+                                    android:layout_below="@+id/staffTravelTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="£750"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/staffTravelPercent"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/staffTravelCount"-->
+<!--                                    android:layout_centerHorizontal="true"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="10%"-->
+<!--                                    android:textColor="@color/gray"-->
+<!--                                    android:textSize="15sp"/>-->
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

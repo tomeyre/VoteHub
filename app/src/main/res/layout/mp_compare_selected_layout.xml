@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImageOuter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/mpImageCv"
+                android:layout_centerVertical="true"
+                android:translationZ="1dp"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/mpImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/mpImageCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_toLeftOf="@+id/removeBtn"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/mpName"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical|left"
+                android:text="name" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/removeBtn"
+                android:layout_below="@+id/mpName"
+                android:textColor="@color/black"
+                android:id="@+id/partyEntity"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:text="party" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/removeBtn"
+                android:textColor="@color/black"
+                android:id="@+id/mpConstituency"
+                android:layout_below="@+id/partyEntity"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="constituency" />
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="remove"
+                    android:id="@+id/removeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

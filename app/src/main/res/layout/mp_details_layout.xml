@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/imageLo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/parliament_chamber">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/mpImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/light_gray"
+                        android:scaleType="centerCrop" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/mpImage"
+                        android:layout_weight="1"
+                        android:background="@drawable/black_fade_left_to_right">
+
+
+                        <TextView
+                            android:id="@+id/mpName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="3.0"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:translationZ="3dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/officeFor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mpName">
+
+                            <TextView
+                                android:id="@+id/mpFor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="3.0"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+
+                            <TextView
+                                android:id="@+id/inOfficeBetween"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mpFor"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="3.0"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/mpParty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/officeFor"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="3.0"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/posts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mpParty"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="3.0"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/web"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/twitter"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:shadowColor="#000"
+                            android:shadowRadius="3.0"
+                            android:textColor="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/twitterImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/twitter" />
+
+                        <TextView
+                            android:id="@+id/twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@+id/twitterImage"
+                            android:shadowColor="#000"
+                            android:shadowRadius="3.0"
+                            android:textColor="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+<!--                <tom.eyre.mp2021.view.SlantView-->
+<!--                    android:scaleX="-1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/transparent" />-->
+
+<!--                <tom.eyre.mp2021.view.SlantView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/transparent" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageLo"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tripInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/sbCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/sbCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Sponsored\nBills"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/yampCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/yampCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Years\nAs MP"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/voteCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/voteTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/voteCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Years\nOld"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/postInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tripInfo"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/parliamentaryPostsCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/parliamentaryPostsCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Parliamentary\nPosts\nHeld"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/governmentPostsCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/governmentPostsCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Government\nPosts\nHeld"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/oppositionPostsCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/oppositionPostsCount"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Opposition\nPosts\nHeld"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnTitleLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/postInfo">
+
+                        <Button
+                            android:id="@+id/takeQuizButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please complete the quiz in order to see how MP's opinions compare with yours" />
+
+                        <TextView
+                            android:id="@+id/opinionsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Does The Mp Agree With You"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/opinionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnTitleLayout">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/opinionsRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/opinionsRecyclerView"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/updateQuiz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp"
+                                    android:text="Change My Opinion"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/opinionTutorial"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_margin="5dp"
+                                    android:text="Understand The Above Results"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/frag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/opinionLayout"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

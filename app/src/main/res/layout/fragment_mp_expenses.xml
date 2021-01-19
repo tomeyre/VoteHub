@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.ExpensesFragment">
+
+    <TextView
+        android:id="@+id/barChartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="How Much Do They Cost You, The Tax Payer"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barChartTitle"
+        android:gravity="center"
+        android:text="2010"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_below="@+id/year"
+        android:id="@+id/loadingExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/loading"
+        android:translationZ="2dp">
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:translationZ="3dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:translationZ="-1dp"
+        android:layout_below="@+id/year"
+        android:id="@+id/yearlyBarChartRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/yearlyBarChart"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/yearlyBarChartRl"
+        android:id="@+id/yearlyExpenseRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

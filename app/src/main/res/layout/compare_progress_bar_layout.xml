@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/titleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Title"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleA"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/totalsA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="9/10"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleA"
+                android:layout_weight="7">
+
+                <ProgressBar
+                    android:id="@+id/progressBarA"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layoutDirection="rtl"
+                    android:padding="4dp"
+                    android:progressDrawable="@drawable/progress_color_white" />
+
+                <TextView
+                    android:id="@+id/pbTextA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/progressBarA"
+                    android:layout_alignTop="@id/progressBarA"
+                    android:layout_alignRight="@id/progressBarA"
+                    android:layout_alignBottom="@id/progressBarA"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="No Votes Recorded"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/titleB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleB"
+            android:weightSum="8">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleB"
+                android:layout_weight="7">
+
+                <ProgressBar
+                    android:id="@+id/progressBarB"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layoutDirection="ltr"
+                    android:padding="4dp"
+                    android:progressDrawable="@drawable/progress_color_white" />
+
+                <TextView
+                    android:id="@+id/pbTextB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/progressBarB"
+                    android:layout_alignTop="@id/progressBarB"
+                    android:layout_alignRight="@id/progressBarB"
+                    android:layout_alignBottom="@id/progressBarB"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="No Votes Recorded"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/totalsB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="9/10"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
